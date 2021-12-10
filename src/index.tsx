@@ -1,9 +1,15 @@
+/*
+ * @Description: 
+ * @Autor: lhy
+ * @Date: 2021-11-30 10:50:34
+ * @LastEditTime: 2021-12-10 10:49:01
+ */
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { loadDevTools } from "jira-dev-tool";
+import 'antd/dist/antd.less'
 import { AppProviders } from "context/index";
 
 loadDevTools(() =>
