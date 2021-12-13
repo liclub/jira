@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /*
  * @Description: 
  * @Autor: lhy
  * @Date: 2021-12-07 14:54:11
- * @LastEditTime: 2021-12-10 10:47:40
+ * @LastEditTime: 2021-12-13 10:24:13
  */
 import { Card, Divider, Button } from "antd";
 import { useState } from "react";
@@ -22,9 +21,9 @@ export const UnAuthenticatedApp = () => {
         </Title>
         {isRegister ? <RegisterScreen /> : <LoginScreen />}
         <Divider/>
-        <a onClick={() => setIsRegister(!isRegister)}>
+        <Button type={'link'} onClick={() => setIsRegister(!isRegister)}>
           {isRegister ? "已经有账号了？直接登录" : "没有账号？注册新账号"}
-        </a>
+        </Button>
       </ShadowCard>
     </Container>
   );
